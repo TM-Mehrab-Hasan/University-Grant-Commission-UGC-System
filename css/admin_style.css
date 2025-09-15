@@ -1,0 +1,244 @@
+/* Root Variables for Colors and Styles */
+:root {
+    --primary-color: #445566;
+    --secondary-color: #667788;
+    --text-color: #444;
+    --light-bg: #f7f7f7;
+    --light-border: #ddd;
+    --input-focus: rgba(102, 119, 136, 0.4);
+}
+
+/* General Styles for Admin Dashboard */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, var(--light-bg), #eaeaea);
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.4em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+
+/* Navigation */
+nav {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+
+nav a:hover {
+    background: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 850px;
+    margin: 15px auto;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+    border: 1px solid var(--light-border);
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-family: 'Times New Roman', serif;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Times New Roman', serif;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 6px var(--input-focus);
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+
+button:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Popup Form */
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    width: 85%;
+    max-width: 380px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+    font-family: 'Times New Roman', serif;
+}
+
+.popup-form h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-family: 'Times New Roman', serif;
+}
+
+.popup-form button {
+    display: inline-block;
+    margin: 8px 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Search Bar */
+.search-bar {
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    font-family: 'Times New Roman', serif;
+}
+
+.search-bar input {
+    padding: 10px 18px;
+    width: 60%;
+    max-width: 280px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+
+.search-bar input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 6px var(--input-focus);
+    outline: none;
+}
+
+.search-bar button {
+    position: absolute;
+    right: 20%;
+    transform: translateY(-50%);
+    top: 50%;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', serif;
+}
+
+.search-bar button:hover {
+    background: var(--primary-color);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

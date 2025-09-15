@@ -1,0 +1,570 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f4, #dfe9f3);
+}
+
+/* Login Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dfe9f3, #f4f4f4);
+}
+
+.login-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-card h1 {
+    color: #004080;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.login-card h2 {
+    color: #0066cc;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.error-message {
+    color: #e63946;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Form Styles */
+.login-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-form label {
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 6px rgba(0, 102, 204, 0.5);
+    outline: none;
+}
+
+.login-btn {
+    background: linear-gradient(90deg, #004080, #0066cc);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background: #004080;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+/* Login Links */
+.login-links {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.login-links a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-links a:hover {
+    color: #004080;
+    text-decoration: underline;
+}
+
+/* Register Page Styles */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dfe9f3, #f4f4f4);
+}
+
+.register-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.register-card h1 {
+    color: #004080;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.register-card h2 {
+    color: #0066cc;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.success-message {
+    color: #4CAF50;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.register-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.register-form label {
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.register-form input, .register-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.register-form input:focus, .register-form select:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 6px rgba(0, 102, 204, 0.5);
+    outline: none;
+}
+
+.register-btn {
+    background: linear-gradient(90deg, #004080, #0066cc);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+}
+
+.register-btn:hover {
+    background: #004080;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.register-links {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.register-links a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-links a:hover {
+    color: #004080;
+    text-decoration: underline;
+}
+
+/* Forgot Password Page Styles */
+.forgot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f4f4f4, #dfe9f3);
+}
+
+.forgot-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.forgot-card h1 {
+    color: #004080;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.forgot-card p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.forgot-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.forgot-form label {
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.forgot-form input, .forgot-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.forgot-form input:focus, .forgot-form select:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 6px rgba(0, 102, 204, 0.5);
+    outline: none;
+}
+
+.forgot-btn {
+    background: linear-gradient(90deg, #004080, #0066cc);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+}
+
+.forgot-btn:hover {
+    background: #004080;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.forgot-links {
+    margin-top: 15px;
+}
+
+.forgot-links a {
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.forgot-links a:hover {
+    color: #0066cc;
+}
+
+.error-message {
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Reset Password Page Styles */
+.reset-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f4f4f4, #dfe9f3);
+}
+
+.reset-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.reset-card h1 {
+    color: #004080;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.reset-card p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.reset-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.reset-form label {
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.reset-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.reset-form input:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 6px rgba(0, 102, 204, 0.5);
+    outline: none;
+}
+
+.reset-btn {
+    background: linear-gradient(90deg, #004080, #0066cc);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+}
+
+.reset-btn:hover {
+    background: #004080;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.error-message {
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #f4f4f4, #0066cc);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #004080; /* Adjusted to match the header text color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: linear-gradient(90deg, #004080, #0066cc);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+
+nav a:hover {
+    background: #004080;
+    transform: scale(1.05);
+}
+
+/* Main Content Styles */
+main {
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', serif;
+}
+
+h2 {
+    color: #004080;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', serif;
+}
+
+h3 {
+    color: #333;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+}
+
+/* News, Resources, and Universities Item Styles */
+.news-item, .resource-item, .university-item {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #f7fbff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Times New Roman', serif;
+}
+
+.news-item:hover, .resource-item:hover, .university-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Error Message Styles */
+p.error {
+    color: #e63946;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(90deg, #004080, #0066cc);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+
+button:hover {
+    background: #004080;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+form label {
+    font-weight: bold;
+    color: #004080;
+    font-family: 'Times New Roman', serif;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: border 0.3s ease;
+    font-family: 'Times New Roman', serif;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+/* Search Bar Styles */
+.search-bar input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border 0.3s ease;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+
+.search-bar button {
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #004080, #0066cc);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #004080;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
